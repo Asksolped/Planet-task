@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>planet task</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f970c88a1a.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- nav bar starts here -->
+    <nav class="navbar">
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+          </a>
+        </li>
+        <li onclick="hideSidebar()"><a href="/landings.html">landings</a></li>
+        <li onclick="hideSidebar()"><a href="#">something</a></li>
+        <li onclick="hideSidebar()">
+          <a href="https://science.nasa.gov/mars/facts/">read more here</a>
+        </li>
+      </ul>
+      <!-- mobile navbar ends here -->
+      <ul>
+        <li>
+          <a href="#title"><i class="fa-solid fa-globe"></i></a>
+        </li>
+        <li class="hideOnMobile"><a href="/landings.html">landings</a></li>
+        <li class="hideOnMobile"><a href="#">something</a></li>
+        <li class="hideOnMobile">
+          <a href="https://science.nasa.gov/mars/facts/">read more here</a>
+        </li>
+        <li class="menuButton" onclick="showsSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368">
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- body starts here -->
+    <div id="hero1">
+      <div id="top">
+        <h1 id="title">Mars</h1>
+      </div>
+      <div id="paragraph1">
+        <p class="paragraph">
+          Mars is the fourth planet from the Sun. The surface of Mars is
+          orange-red because it is covered in iron oxide dust, giving it the
+          nickname "the Red Planet". Mars is among the brightest objects in
+          Earth's sky, and its high-contrast albedo features have made it a
+          common subject for telescope viewing. It is classified as a
+          terrestrial planet and is the second smallest of the Solar System's
+          planets with a diameter of 6,779 km (4,212 mi). In terms of orbital
+          motion, a Martian solar day (sol) is equal to 24.5 hours, and a
+          Martian solar year is equal to 1.88 Earth years (687 Earth days). Mars
+          has two natural satellites that are small and irregular in shape:
+          Phobos and Deimos.
+        </p>
+      </div>
+
+      <div id="image1">
+        <img id="shuttle_img" src="src/space_shuttle.png" alt="" />
+      </div>
+    </div>
+
+    <!-- End of "page 1" -->
+    <div id="hero2">
+      <div id="paragraph3">
+        <p class="paragraph">
+          Mars was formed approximately 4.5 billion years ago. During the
+          Noachian period (4.5 to 3.5 billion years ago), Mars's surface was
+          marked by meteor impacts, valley formation, erosion, and the possible
+          presence of water oceans. The Hesperian period (3.5 to 3.3–2.9 billion
+          years ago) was dominated by widespread volcanic activity and flooding
+          that carved immense outflow channels. The Amazonian period, which
+          continues to the present, has been marked by the wind as a dominant
+          influence on geological processes. Due to Mars's geological history,
+          the possibility of past or present life on Mars remains of great
+          scientific interest.
+        </p>
+      </div>
+      <div id="paragraph4">
+        <p class="paragraph">
+          Scientists have theorized that during the Solar System's formation,
+          Mars was created as the result of a random process of run-away
+          accretion of material from the protoplanetary disk that orbited the
+          Sun. Mars has many distinctive chemical features caused by its
+          position in the Solar System. Elements with comparatively low boiling
+          points, such as chlorine, phosphorus, and sulfur, are much more common
+          on Mars than on Earth; these elements were probably pushed outward by
+          the young Sun's energetic solar wind. After the formation of the
+          planets, the inner Solar System may have been subjected to the
+          so-called Late Heavy Bombardment. About 60% of the surface of Mars
+          shows a record of impacts from that era, whereas much of the remaining
+          surface is probably underlain by immense impact basins caused by those
+          events. However, more recent modelling has disputed the existence of
+          the Late Heavy Bombardment.
+        </p>
+      </div>
+      <a class="buttonlink" href="https://science.nasa.gov/mars/facts/">
+        <button class="btn">continue reading</button>
+      </a>
+    </div>
+    <script>
+      function showsSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
