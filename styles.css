@@ -9,6 +9,10 @@ body {
   background-image: url(src/doug-walters-QQ9MzSs-o1I-unsplash.jpg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Nav section */
 
 .navbar {
@@ -199,6 +203,7 @@ h1 {
   margin-top: -20%;
   animation: fade-in linear;
   animation-timeline: scroll();
+  animation-range: entry;
 }
 
 @keyframes fade-in {
